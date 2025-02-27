@@ -1,0 +1,24 @@
+{
+    "name": "markdown intro - dev container",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "22"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "DavidAnson.vscode-markdownlint",
+                "sapse.vscode-cds",
+                "dbaeumer.vscode-eslint",
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    },
+    "forwardPorts": [
+        4004
+    ],
+    "remoteUser": "node",
+    "runArgs": ["--platform=linux/amd64" ]
+}
